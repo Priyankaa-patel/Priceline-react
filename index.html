@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Priceline</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <!---------Favicon------>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!----------css---------->
+    <link rel="stylesheet" href="css/main-style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!--------font css----->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+  </head>
+
+  <body>
+    <!---------Navigation Start---------->
+    <div class="top-bar">
+      <div class="sale1 float-left">Spring hotel sale</div>
+      <div class="sale2 float-left tooltip">
+        Save $20 on a 2-night Express Deal hotel with SPRING20*
+        <p class="tooltiptext">
+          Promo Code SPRING20
+          <span class="font12 colortop"
+            >Valid for $20 off a min. $100, 2 night stay at Express Deal
+            hotels</span
+          >
+        </p>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <div class="logo float-left"><img src="images/logo.jpg" alt="" /></div>
+      <div class="navi-left" id="myTopnav">
+        <ul>
+          <li><a href="#">Hotels</a></li>
+          <li><a href="#">Cars</a></li>
+          <li><a href="#">Flights</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Cruises</a></li>
+          <li>
+            <a href="javscript:void(0);" class="icon" onclick="myFunction()"
+              ><i class="fa fa-bars"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <!---------Right side navigation------->
+      <div class="navi-right float-right">
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fa fa-user-circle"></i><span>Sign in</span></a
+            >
+          </li>
+          <li class="dropdown">
+            <a class="dropbtn" href="#"
+              ><i class="fa fa-briefcase"></i><span>Find My Trip</span
+              ><i class="fa fa-caret-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#"><span></span>Find My Trip</a>
+              <a href="#">View, Print or Email Your Iternity</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a class="dropbtn" href="#"
+              ><i class="fa fa-question-circle"></i><span>Help</span
+              ><i class="fa fa-caret-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#">Frequently Asked Questions</a>
+              <a href="#">Find Your Request Number</a>
+              <a href="#">Profile Password Help</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!------------------Navigation End ---------->
+
+    <!-----------Banner Start----------------->
+
+    <div id="banner">
+      <section>
+        <div class="searchbox"></div>
+      </section>
+    </div>
+
+    <!----------Banner end------------->
+    <!---------Ad section start------->
+    <section class="row">
+      <div class="ad-left">
+        <div class="ad-left-in1 float-left">
+          <div class="ad-left-img"></div>
+        </div>
+        <div class="ad-left-in2 float-left">
+          <div class="box-text">
+            <span>Pricebreakers </span> saves you up to 50% on your hotel.
+          </div>
+          <p class="font16">We'll pick 3 hotels, you'll save big on one.</p>
+          <button class="btn">Search Hotels</button>
+        </div>
+      </div>
+      <div class="ad-right">
+        <div class="ad-right-in1 float-left">
+          <div class="box-text"><span>$20 off</span> Coupon</div>
+          <p class="lineh22">
+            Save $20 on 2-night Express Deal hotel stay with SPRING20*
+          </p>
+          <a class="font12 color" href="#">Learn More</a>
+        </div>
+        <div class="ad-right-in2 float-left">
+          <div class="ad-right-img"></div>
+        </div>
+      </div>
+    </section>
+    <!---------Ad section end--------->
+    <!---------Service section Start------>
+    <div class="row">
+      <div class="service">
+        <p class="service-icon"><i class="fa fa-tag color"></i></p>
+        <p class="service-title">DEALS FOR EVERY BUDGET</p>
+        <p class="service-cont">
+          Incredible prices on hotels, flights, cars, and packages worldwide.
+        </p>
+      </div>
+      <div class="service">
+        <p class="service-icon"><i class="fa fa-money color"></i></p>
+        <p class="service-title">BILLIONS SAVED</p>
+        <p class="service-cont">
+          We've already saved travelers billions of dollars!
+        </p>
+      </div>
+      <div class="service">
+        <p class="service-icon"><i class="fa fa-check-square-o color"></i></p>
+        <p class="service-title">Best price guaranteed</p>
+        <p class="service-cont">
+          Find a lower price? We'll refund you 100% of the difference.
+        </p>
+      </div>
+      <div class="service">
+        <p class="service-icon"><i class="fa fa-question-circle color"></i></p>
+        <p class="service-title">Help 24/7</p>
+        <p class="service-cont">
+          We’re always here for you – reach us 24 hours a day, 7 days a week.
+        </p>
+      </div>
+    </div>
+    <!---------Service section end------>
+    <!----------Hotel deal slider start------->
+    <section>
+      <h2>Don't miss these hotel + flight deals</h2>
+    </section>
+    <!----------Hotel deal slider end------->
+
+    <!---------Navigation toggle script-------->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navi-left") {
+          x.className += " responsive";
+        } else {
+          x.className = "navi-left";
+        }
+      }
+    </script>
+  </body>
+</html>
